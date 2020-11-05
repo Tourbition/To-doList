@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calendar</string>
+    <string name="time">Time</string>
+    <string name="calendar">Calendar</string>
+    <string name="submit">Save</string>
+    <string name="allnote">All</string>
+    <string name="title">Title</string>
+    <string name="context">Context</string>
+</resources>

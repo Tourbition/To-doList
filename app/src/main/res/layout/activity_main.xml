@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity"
+    android:background="@color/beige">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textCapWords"
+            android:textSize="20sp"
+            android:hint="@string/title"/>
+
+            <ToggleButton
+                android:id="@+id/btStar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:checked="false"
+                android:layout_weight="0"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/star_button"/>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/text2"
+            android:layout_width="370dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textSize="15sp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:minLines="8"
+            android:maxLines="10"
+            android:scrollbars="vertical"
+            android:hint="@string/context" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btTime"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@color/tan"
+                android:text="@string/time"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btCalender"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/tan"
+                android:drawableTint="#F44336"
+                android:text="@string/calendar"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btSubmit"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@color/tan"
+            android:text="@string/submit"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <View
+            android:layout_width="400dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="#000" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/tan"
+        android:onClick="open"
+        android:text="@string/allnote"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
